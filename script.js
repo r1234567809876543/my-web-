@@ -5,7 +5,7 @@ function addFact() {
     "HTML stands for HyperText Markup Language.",
     "CSS is what makes websites look pretty.",
     "JavaScript can make websites interactive.",
-    "You are viewing this page from GitHub Pages!",
+    "You are viewing this page from <a href='https://pages.github.com/' target='_blank'>GitHub Pages</a>",
     "Computers only understand 1s and 0s — wild, right?",
     "The internet and the web are *not* the same thing.",
     "Web developers use something called a 'DOM' to change pages."
@@ -14,7 +14,6 @@ function addFact() {
   const fact = facts[randomIndex];
   const container = document.getElementById("factContainer");
   const p = document.createElement("p");
-  p.textContent = "This site was made with HTML, CSS, and JavaScript!";
-  p.textContent = fact;
+  p.innerHTML = fact;
   container.appendChild(p);
 }
