@@ -17,3 +17,4 @@ function addFact() {
   p.textContent = "This site was made with HTML, CSS, and JavaScript!";
   p.textContent = fact;
   container.appendChild(p);
+}
